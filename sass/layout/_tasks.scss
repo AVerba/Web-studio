@@ -1,0 +1,41 @@
+.page__team {
+  background-color: collection-color(team-bg-color);
+}
+.tasks {
+  display: none;
+  @include for-size(desktop) {
+    display: block;
+    padding-top: 2px;
+
+    // .tasks__title
+    &__title {
+      margin-bottom: 50px;
+    }
+  
+    // .tasks__list
+    &__list {
+      display: flex;
+      li:not(:first-child) {
+        margin-left: 30px;
+      }
+    }
+  
+    // .tasks__item
+    &__item {
+      position: relative;
+      .label {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        padding: 27px 0;
+  
+        @include font-modify(#ffffff, 14, 700, 0.03em, 16);
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        background: rgba(47, 48, 58, 0.8);
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container flex-cont ">
+                <a href="./index.html" class="header__logo logo">Web<span>Studio</span></a>
+                <button type="button" class="header__mobile-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="icon" width="40" height="40">
+                        <use xlink:href="./images/icons/mobile-menu-icons.svg#open-menu"></use>
+                    </svg>
+                </button>                                 
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li><a href="./index.html" class="menu__link">Студия</a></li>
+                        <li><a href="./portfolio.html" class="menu__link">Портфолио</a></li>
+                        <li><a href="./contacts.html" class="menu__link _active">Контакты</a></li>
+                        </ul>             
+                </nav>
+                <ul class="header__contacts contacts">
+                    <li>
+                        <a href="mailto:info@devstudio.com" class="contacts__link">
+                            <svg class="icon" width="16" height="12">
+                                <use xlink:href="./images/icons.svg#mail"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a href="tel:+380961111111" class="contacts__link">
+                            <svg class="icon"  width="10" height="16" >
+                                <use xlink:href="./images/icons.svg#phone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul> 
+            </div>
+        </header>
+        <section class="our-contacts"></section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_row">
+                    <address class="footer__contacts f-contacts">
+                        <a href="./index.html" class="footer__logo logo">Web<span>Studio</span></a>
+                        <ul class="f-contacts__list">
+                            <li><a class="f-contacts__link" href="https://goo.gl/maps/Z7a2orzkB7U8Lw847" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                            <li><a class="f-contacts__link" href="mailto:info@example.com">info@example.com</a></li>
+                            <li><a class="f-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                        </ul>               
+                    </address>
+                    <div class="footer__social social">
+                        <h3 class="social__title">присоединяйтесь</h3>
+                        <ul class="social__list">
+                            <li class="social__link">
+                                <a href="">
+                                    <svg class="icon" width="20" height="20">
+                                        <use xlink:href="./images/icons.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="">
+                                    <svg class="icon" width="20" height="20">
+                                        <use xlink:href="./images/icons.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="">
+                                    <svg class="icon" width="20" height="20">
+                                        <use xlink:href="./images/icons.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social__link">
+                                <a href="">
+                                    <svg class="icon" width="20" height="20">
+                                        <use xlink:href="./images/icons.svg#linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__subscriptoin-email subscr-email">
+                        <h3 class="subscr-email__title">Подпишитесь на рассылку</h3>
+                        <form action="#" class="subscr-email__form _flex-center">
+                            <label class="subscr-email__field">
+                                <input type="mail" class="subscr-email__input" name="mail" placeholder="E-mail"/>                                
+                            </label>
+                            <button type="submit" class=" button subscr-email__btn">                      
+                                <span>Подписаться</span>
+                                <span class="subscr-email__icon _flex-center">
+                                    <svg class="btn-icon" width="24" height="24">
+                                        <use href="./images/send.svg#send"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </form>                         
+                    </div>
+                </div>
+            </div>            
+        </footer>
+    </div>
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>

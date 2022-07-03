@@ -1,0 +1,21 @@
+/*=========TITLE=============*/
+/* H1 */
+h1 {
+  @include font-modify(#ffff, 26, 900, 0.06em, 42);
+  text-align: center;
+  text-transform: uppercase;
+
+  @include for-size(desktop) {
+    @include font-modify(#ffff, 44, 900, 0.06em, 60);
+  }
+}
+/* H2 */
+.sub-title {
+  @include font-modify(#{collection-color(section-title-color)}, 36, 700, 0.03em, 42);
+  text-align: center;
+}
+/* H3 */
+h3 {
+  @include font-modify(#{collection-color(section-title-color)}, 14, 700, 0.03em, 16);
+  text-transform: uppercase;
+}
